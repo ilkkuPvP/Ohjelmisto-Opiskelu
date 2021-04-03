@@ -11,7 +11,7 @@ pieninSuurin([8,4,9,6,2]);
 
 //Tehtävä 2
 var t2 = "Tehtävä 2: ";
-function pariPariton(luku) {
+function pariVaiPariton(luku) {
   if (luku % 2 == 0) {
     console.log(t2 + "parillinen");
   }
@@ -19,7 +19,7 @@ function pariPariton(luku) {
     console.log(t2 + "pariton");
   }
 }
-pariPariton(4);
+pariVaiPariton(4);
 
 //Tehtävä 3
 var t3 = "Tehtävä 3: ";
@@ -101,24 +101,28 @@ aakkosiksi("terve");
 
 //Tehtävä 6
 var t6 = "Tehtävä 6: "
-function arvostele(pisteet) {
+function arvostele(opiskelija, pisteet) {
   if (pisteet < 50) {
     console.log(t6 + "Hylätty");
   }
   else if (pisteet < 60) {
-    console.log(t6 + "T1");
+    console.log(t6 + opiskelija + "T1");
   }
   else if (pisteet < 70) {
-    console.log(t6 + "T2");
+    console.log(t6 + opiskelija + "T2");
   }
   else if (pisteet < 80) {
-    console.log(t6 + "H3");
+    console.log(t6 + opiskelija + "H3");
   }
   else if (pisteet < 90) {
-    console.log(t6 + "H4");
+    console.log(t6 + opiskelija + "H4");
   }
   else if (pisteet < 100) {
-    console.log(t6 + "K5");
+    console.log(t6 + opiskelija + "K5");
   }
 }
-arvostele(77);
+arvostele("Daniel: ", 80);
+arvostele("Viivi: ", 77);
+arvostele("Tiina: ", 88);
+arvostele("Ismael: ", 95);
+arvostele("Tuomas: ", 68);

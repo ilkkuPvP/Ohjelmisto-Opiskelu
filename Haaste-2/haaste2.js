@@ -1,52 +1,61 @@
-var taulukkoMuuttuja = [34, 566, 71, 89]; //Tehtävä 3 taulukko
-
 //Tehtävä 1
-function laskeYhteen(teht, num1, num2) {
-  console.log(teht + (num1 + num2));
+var t1 = "Tehtävä 1: ";
+function laskeYhteen(num1, num2) {
+  console.log(t1 + (num1 + num2));
 }
-
+laskeYhteen(2, 5);
 // Tehtävä 2
-function ekaMuuttuja(teht, muuttuja) {
-  console.log(teht + (muuttuja));
+var t2 = "Tehtävä 2: ";
+function ekaMuuttuja(num1, num2, num3, num4) {
+  var taulukko = [78, 82, 129, 367];
+  console.log(t2 + taulukko[0]);
 }
-
+ekaMuuttuja();
 // Tehtävä 3 (Yllätyin, että osasin :D Tälle en edes katsonut apua)
+var t3 = "Tehtävä 3: ";
+var taulukkoMuuttuja = [34, 566, 71, 89];
 function kaksiMuuttujaa(num1, num2) {
   if ((num1 + num2) < 100) {
-    console.log("Tehtävä 3: " + "Lukujen summa on alle 100");
+    console.log(t3 + "Lukujen summa on alle 100");
+  }
+  else if ((num1 + num2) == 100) {
+    console.log(t3 + "Luku on sata, tätä korkeammalle en voi laskea.");
   }
   else {
-    console.log("Tehtävä 3: " + "Luvut ovat liian suuria, jotta pystyisin laskemaan niitä!");
+    console.log(t3 + "Luvut ovat liian suuria, jotta pystyisin laskemaan niitä!");
   }
 }
-
+kaksiMuuttujaa(26, 49);
 //Tehtävä 4 (Tämäkin oli todella helppo)
+var t4 = "Tehtävä 4: ";
 function onkoSamat(num1, num2) {
   if (num1 == num2) {
-    console.log("Tehtävä 4: " + "Samat luvut");
+    console.log(t4 + "Samat luvut");
   }
   else {
-    console.log("Tehtävä 4: " + "Eri luvut");
+    console.log(t4 + "Eri luvut");
   }
 }
-
+onkoSamat(3, 3);
 //Tehtävä 5 (Tääkin oli helppo)
+var t5 = "Tehtävä 5: ";
 function sekunneiksi(tunnit, minuutit, sekunnit) {
-  console.log("Tehtävä 5:");
+  console.log(t5);
   console.log("   Tunnit sekunneiksi: " + (tunnit * 60 * 60));
   console.log("   Minuutit sekunneiksi: " + (minuutit * 60));
   console.log("   Sekunnit sekunneiksi: " + sekunnit);
 }
-
+sekunneiksi(12, 48, 43);
 //Tehtävä 6 (Tässä tarvitsin apua jonkun verran, mutta lopulta tajusin)
-function laskeIkani(pv, kk, vvvv) {
+var t6 = "Tehtävä 6: ";
+function laskeIkani(spv, skk, svvvv) {
 
-  function muutaVuodet(vvvv) {
-    return vvvv * 365.25;
+  function muutaVuodet(svvvv) {
+    return svvvv * 365.25;
   }
 
-  function muutaKuukaudet(kk) {
-    switch (kk - 1) {
+  function muutaKuukaudet(skk) {
+    switch (skk - 1) {
       case 0:
         return 0;
         break;
@@ -99,7 +108,8 @@ function laskeIkani(pv, kk, vvvv) {
         return 0;
     }
   }
-  Syntymaaika = muutaVuodet(vvvv) + muutaKuukaudet(kk) + pv;
-  Nyt = muutaVuodet(2021) + muutaKuukaudet(3) + 5;
-  console.log("Tehtävä 6: " + "Minun ikäni päivinä on " + (Nyt - Syntymaaika));
+  var syntymaaika = muutaVuodet(svvvv) + muutaKuukaudet(skk) + spv;
+  var nykypaiva = muutaVuodet(2021) + muutaKuukaudet(3) + 5;
+  console.log(t6 + "Minun ikäni päivinä on " + (nykypaiva - syntymaaika));
 }
+laskeIkani(3, 9, 2004);

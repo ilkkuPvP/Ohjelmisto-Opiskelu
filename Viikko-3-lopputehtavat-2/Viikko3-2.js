@@ -1,34 +1,13 @@
 function javaScript() {
 //---------
 //Yleiset muuttujat
-  var pariLuku = parseInt(document.getElementById("textPariLuku").value); //T1
-  var salasanaksi = document.getElementById("textSalasanaksi").value; //T2
+  var sanaScrabble = document.getElementById("textScrabble").value; //T1
 
-  var onkoKirjainta = document.getElementById("textOnkoKirjainta").value; //T3
-
-  var kertomaLuku = document.getElementById("textKertomaLuku").value; //T4
-
-  var luku8 = document.getElementById("textLuku8").value; //T8
-  var potenssi8 = document.getElementById("textPotenssi8").value; //T8
-
-  var num1 = document.getElementById("textNum1").value; //T9
-  var num2 = document.getElementById("textNum2").value; //T9
-  var num3 = document.getElementById("textNum3").value; //T9
-  var num4 = document.getElementById("textNum4").value; //T9
-  var num5 = document.getElementById("textNum5").value; //T9
-
-  var salasanaMuokkaus = document.getElementById("textSalasanaMuokkaus").value; //T10
-
-  var pNum = parseInt(document.getElementById("textPnum").value); //T11
-  var sNum = parseInt(document.getElementById("textSnum").value); //T11
 //---------
 // Tehtävä 1
-var pariLuvut = "";
-  for (var i = 2; i <= pariLuku; i = i+2) {
-    pariLuvut+=i;
-    pariLuvut+=", ";
-  }
-document.getElementById("vastaus1").innerHTML = pariLuvut;
+var sanaTaulukko = sanaScrabble.split();
+
+document.getElementById("vastaus1").innerHTML = ;
 //---------
 // Tehtävä 2
 var salasana = "";

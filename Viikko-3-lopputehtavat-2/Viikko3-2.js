@@ -5,6 +5,8 @@ function javaScript() {
 //Yleiset muuttujat
   var sanaScrabble = document.getElementById("textScrabble").value; //T1
 
+  var lottoInput = document.getElementById("textLottoInput").value;
+
 //---------
 // Tehtävä 1
 var pisteet = 0;
@@ -97,6 +99,25 @@ document.getElementById("vastaus1").innerHTML = "Valitsemasi sanan " + "\"" + sa
 // Tehtävä 2
 var lottoNums = [];
 
+var min = Math.ceil(1);
+var max = Math.floor(40);
+for (var i = 1; i <= 7; i++) {
+  lottoNums.push(Math.floor(Math.random() * (max - min) + min));
+}
+
+//Tässä pieni BONUS tehtävään 2 :D
+lottoInput = parseInt(lottoInput);
+
+if (lottoNums.includes(lottoInput)) {
+  document.getElementById("vastaus2_2").innerHTML = "Aivan mahtavaa! Sait arvattua vähintään yhden arvotun numeron!";
+}
+else {
+  document.getElementById("vastaus2_2").innerHTML = "Valitettavasti arvasit väärin. Parempi onni ensi kerralla!"
+}
+//BONUS Loppuu tähän
+
+vastaus2 = lottoNums;
+document.getElementById("vastaus2_1").innerHTML = vastaus2;
 
 
 //

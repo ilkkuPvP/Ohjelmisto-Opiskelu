@@ -99,7 +99,7 @@ var luvut = [num1, num2, num3, num4, num5];
 var min = luvut[0];
 var max = luvut[0];
 
-for (var i =1; i < luvut.length; i++) {
+for (var i = 0; i <= luvut.length; i++) {
   if (luvut[i] > max) {
     max = luvut[i];
   }

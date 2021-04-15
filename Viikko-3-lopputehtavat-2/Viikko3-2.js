@@ -87,7 +87,7 @@ for (var i = 0; i < sanaScrabble.length; i++) {
 }
 document.getElementById("vastaus1").innerHTML = "Valitsemasi sanan " + "\"" + sanaScrabble + "\" pisteet ovat " + pisteet;
 
-//Yritykseni ennenkuin tajusin, että switch on hyvä työkalu :D
+//Osa yrityksestäni ennenkuin tajusin, että switch voisi kokeilla :D
 //--
 //  var sanaTaulukko = Array.from(sanaScrabble);
 //  var taulukko1p = ["a", "e", "i", "n", "s", "t", "A", "E", "I", "N", "S", "T"];
@@ -95,6 +95,7 @@ document.getElementById("vastaus1").innerHTML = "Valitsemasi sanan " + "\"" + sa
 
 //---------
 // Tehtävä 2
+var lottoNums = [];
 
 
 

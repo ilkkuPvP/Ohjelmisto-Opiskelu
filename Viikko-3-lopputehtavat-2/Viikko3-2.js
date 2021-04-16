@@ -119,6 +119,55 @@ else {
 vastaus2 = lottoNums;
 document.getElementById("vastaus2_1").innerHTML = vastaus2;
 
+//---------
+// Tehtävä 4
+var saatavatKortit = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"];
+var maat = ["Hertta-", "Pata-", "Ruutu-", "Risti-"];
+var kortit = [];
+var monesKortti = 0
+
+for (var m = 0; m < maat.length; m++) {
+
+  for (var k = 0; k < saatavatKortit.length; k++) {
+
+    if (m == maat.length - 1 && k == saatavatKortit.length - 1) {
+      kortit[monesKortti] = maat[m] + saatavatKortit[k];
+    }
+    else {
+      kortit[monesKortti] = maat[m] + saatavatKortit[k];
+      monesKortti++;
+
+    }
+  }
+}
+
+var omaKasi = [];
+
+for (var i = 0; i < 5; i++) {
+  omaKasi[i] = kortit[Math.floor(Math.random() * 52)];
+}
+document.getElementById("vastaus4").innerHTML = omaKasi;
+
+//---------
+// Tehtävä 4
+var tauluNums = [[6,43,12,32], [10,18,34,50], [2,26,11,18], [5,37,47,1], [7,32,14,25]]
+
+
+var taulukko = "<table border=1>";
+for (var i = 0; i < tauluNums.length; i++) {
+  taulukko += "<tr>";
+
+  for (var j = 0; j < tauluNums[i].length; j++) {
+    taulukko += "<td>" + tauluNums[i][j] + "</td>";
+  }
+  taulukko += "</tr>";
+}
+taulukko += "</table>";
+var vastaus3 = taulukko;
+
+console.log(vastaus3);
+document.getElementById("vastaus3").innerHTML = vastaus3;
+
 
 //
 }

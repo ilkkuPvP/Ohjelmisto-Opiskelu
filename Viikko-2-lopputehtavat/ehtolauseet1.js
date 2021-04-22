@@ -1,61 +1,65 @@
-var t;
 //Tehtävä 1
-t = "Tehtävä 1: ";
-function jarjesta(num1,num2,num3) {
-  var taulukko = [num1,num2,num3];
-  console.log(t + taulukko.sort());
+function jarjesta() {
+  let num1 = document.getElementById("textLukuJar1").value;
+  let num2 = document.getElementById("textLukuJar2").value;
+  let num3 = document.getElementById("textLukuJar3").value;
+
+  let taulukko = [num1,num2,num3];
+  document.getElementById("vastaus1").innerHTML = taulukko.sort();
 }
-jarjesta(3,7,1);
 
 //Tehtävä 2
-t = "Tehtävä 2: ";
-function etsiSuurin(num1,num2,num3,num4,num5) {
-  var taulukko = [num1,num2,num3,num4,num5];
-  console.log(t + Math.max.apply(0,taulukko));
-}
-etsiSuurin(2,5,4,8,3);
+function etsiSuurin() {
+  let num1 = document.getElementById("textLukuEtsi1").value;
+  let num2 = document.getElementById("textLukuEtsi2").value;
+  let num3 = document.getElementById("textLukuEtsi3").value;
+  let num4 = document.getElementById("textLukuEtsi4").value;
+  let num5 = document.getElementById("textLukuEtsi5").value;
 
+  let taulukko = [num1,num2,num3,num4,num5];
+  document.getElementById("vastaus2").innerHTML = Math.max.apply(0,taulukko);
+}
 //Tehtävä 3
-t = "Tehtävä 3: ";
-function pariPariton(num) {
+function pariPariton() {
+  let num = document.getElementById("textPariPariton").value;
+
   if (num % 2 == 0) {
-    console.log(t + "parillinen");
+    document.getElementById("vastaus3").innerHTML = "parillinen";
   }
   else {
-    console.log(t + "pariton");
+    document.getElementById("vastaus3").innerHTML = "pariton";
   }
 }
-pariPariton(4);
 
 //Tehtävä 4
-t = "Tehtävä 4: "
-function tarpeeksiVanha(ika) {
+function tarpeeksiVanha() {
+  let ika = document.getElementById("textIka").value;
+
   if (ika < 16) {
-    console.log(t + "Saat ajaa polkupyörää!");
+    document.getElementById("vastaus4").innerHTML = "Saat ajaa polkupyörää!";
   }
   else if (ika < 18) {
-    console.log(t + "Saat ajaa pyörän lisäksi mopoa!");
+    document.getElementById("vastaus4").innerHTML = "Saat ajaa pyörän lisäksi mopoa!";
   }
   else {
-    console.log(t + "Saat ajaa pyörän ja mopon lisäksi autoa!");
+    document.getElementById("vastaus4").innerHTML = "Saat ajaa pyörän ja mopon lisäksi myös autoa!";
   }
 }
-tarpeeksiVanha(16);
 
 //Tehtävä 5
-t = "Tehtävä 5: "
-function kaannaKieleen(kieli) {
-  if (kieli == "Englanti") {
-    console.log(t + "Hello World!");
+function kaannaKieleen() {
+  let kieli = document.getElementById("selectKieli").value;
+
+  if (kieli == "eng") {
+    document.getElementById("vastaus5").innerHTML = "Hello World!";
   }
-  else if (kieli == "Ruotsi") {
-    console.log(t + "Hej världen!");
+  else if (kieli == "ruo") {
+    document.getElementById("vastaus5").innerHTML = "Hej världen!";
   }
-  else if (kieli == "Espanja") {
-    console.log(t + "Hola Mundo!");
+  else if (kieli == "esp") {
+    document.getElementById("vastaus5").innerHTML = "Hola Mundo!";
   }
   else {
-    console.log(t + "Et valinnut kieltä.");
+    document.getElementById("vastaus5").innerHTML = "Et valinnut kieltä.";
   }
 }
-kaannaKieleen("Englanti");

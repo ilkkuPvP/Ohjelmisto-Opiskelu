@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="Viikko-2-ekat.css">
+    <script src="ehtolauseet1.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title>Viikko 2 (1)</title>
+  </head>
+  <body>
+
+    <form id="kokoform">
+<!------------------------------->
+      Tehtävä 1:
+      <br>
+      Järjestän antamasi luvut
+      <br>
+
+      <input type="number" id="textLukuJar1" placeholder="Luku, esim. 3" value="">
+      <input type="number" id="textLukuJar2" placeholder="Luku, esim. 1" value="">
+      <input type="number" id="textLukuJar3" placeholder="Luku, esim. 2" value="">
+      <br>
+      <button type="button" onclick="jarjesta()" name="button">Järjestä</button>
+
+      <p id="vastaus1"></p>
+
+      <br><br>
+<!------------------------------->
+      Tehtävä 2:
+      <br>
+      Kerron luvuistasi suurimman
+      <br>
+
+      <input type="number" id="textLukuEtsi1" placeholder="Luku, esim. 4" value="">
+      <input type="number" id="textLukuEtsi2" placeholder="Luku, esim. 3" value="">
+      <input type="number" id="textLukuEtsi3" placeholder="Luku, esim. 2" value="">
+      <input type="number" id="textLukuEtsi4" placeholder="Luku, esim. 5" value="">
+      <input type="number" id="textLukuEtsi5" placeholder="Luku, esim. 1" value="">
+      <br>
+      <button type="button" onclick="etsiSuurin()" name="button">Etsi</button>
+
+      <p id="vastaus2"></p>
+
+      <br><br>
+<!------------------------------->
+      Tehtävä 3:
+      <br>
+      Kerron, onko lukusi parillinen vai ei
+      <br>
+
+      <input type="number" id="textPariPariton" placeholder="Luku, esim. 6" value="">
+      <br>
+      <button type="button" onclick="pariPariton()" name="button">Tarkista</button>
+
+      <p id="vastaus3"></p>
+
+      <br><br>
+<!------------------------------->
+      Tehtävä 4:
+      <br>
+      Tarkistan, oletko tarpeeksi vanha tietyille ajoneuvoille
+      <br>
+
+      <input type="number" id="textIka" placeholder="Luku, esim. 21" value="">
+      <br>
+      <button type="button" onclick="tarpeeksiVanha()" name="button">Tarkista</button>
+
+      <p id="vastaus4"></p>
+
+      <br><br>
+<!------------------------------->
+      Tehtävä 5:
+      <br>
+      Käännän lauseen "Hei Maailma!" valitsemaasi kieleen
+      <br>
+
+      <select id="selectKieli">
+        <option value="empty"></option>
+        <option value="eng">Englanti</option>
+        <option value="ruo">Ruotsi</option>
+        <option value="esp">Espanja</option>
+      </select>
+      <br>
+      <button type="button" onclick="kaannaKieleen()" name="button">Käännä</button>
+
+      <p id="vastaus5"></p>
+
+      <br><br>
+<!------------------------------->
+    </form>
+
+
+  </body>
+</html>

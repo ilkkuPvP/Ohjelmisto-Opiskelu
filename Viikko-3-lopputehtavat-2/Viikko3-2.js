@@ -149,7 +149,7 @@ for (var i = 0; i < 5; i++) {
 document.getElementById("vastaus4").innerHTML = omaKasi;
 
 //---------
-// Tehtävä 4
+// Tehtävä 3
 var tauluNums = [[6,43,12,32], [10,18,34,50], [2,26,11,18], [5,37,47,1], [7,32,14,25]]
 
 

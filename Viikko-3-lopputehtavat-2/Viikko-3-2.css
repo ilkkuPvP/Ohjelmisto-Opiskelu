@@ -1,0 +1,25 @@
+body {
+  background-color: #ffe99c;
+}
+
+input {
+  border: solid 2px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+input:hover {
+  background-color: lightgray;
+}
+
+button {
+background-color: white;
+color: black;
+padding: 10px 10px;
+font-size: 16px;
+}
+
+button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}

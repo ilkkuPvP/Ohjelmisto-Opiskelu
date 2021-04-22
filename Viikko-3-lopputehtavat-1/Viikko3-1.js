@@ -24,11 +24,12 @@ function javaScript() {
 //---------
 // Tehtävä 1
 var pariLuvut = "";
+
   for (var i = 2; i <= pariLuku; i = i+2) {
     pariLuvut+=i;
     pariLuvut+=", ";
+    document.getElementById("vastaus1").innerHTML = pariLuvut;
   }
-document.getElementById("vastaus1").innerHTML = pariLuvut;
 //---------
 // Tehtävä 2
 var salasana = "";
@@ -94,12 +95,15 @@ vastaus8 = Math.pow(luku8, potenssi8);
 document.getElementById("vastaus8").innerHTML = "Antamiesi lukujen vastaus on: " + vastaus8;
 //---------
 // Tehtävä 9
+
 var luvut = [num1, num2, num3, num4, num5];
 
+// Vanha (Ei toimiva koodi)
+/*
 var min = luvut[0];
 var max = luvut[0];
 
-for (var i = 0; i <= luvut.length; i++) {
+for (var i = 1; i < luvut.length; i++) {
   if (luvut[i] > max) {
     max = luvut[i];
   }
@@ -107,6 +111,15 @@ for (var i = 0; i <= luvut.length; i++) {
     min = luvut[i];
   }
 }
+*/
+// Vanha koodi loppuu
+
+// Uusi koodi (toimii)
+var min = Math.min.apply(Math,luvut);
+var max = Math.max.apply(Math,luvut);
+console.log(min + " " + max);
+// Uusi koodi loppuu
+
 document.getElementById("vastaus9").innerHTML = "Pienin luku on: " + min + ", ja suurin luku: " + max;
 //---------
 // Tehtävä 10
